@@ -241,5 +241,10 @@ font-style: normal;
 font-weight: 700;
 line-height: normal;}
 
+.Facebook {
+    fill: url('images/Page\1\-\Acceuil/Facebook+Icon+Black.png'), lightgray -46.455px -9.553px / 331.956% 151.282% no-repeat;
+width: 39px;
+height: 39px;
+flex-shrink: 0;}
 
 </style>
