@@ -220,6 +220,63 @@ flex-shrink: 0;
 .dropdown4:hover .dropbtn4 {
     background-color: #D9D9D9;
 }
+/*Menu 5*/
+<style>
+/* Style The Dropdown Button */
+.dropbtn5 {
+    width: 128px;
+    height: 47px;
+    flex-shrink: 0;
+    background: #D9D9D9;
+    mix-blend-mode: hard-light;
+    
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown5 {
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content5 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content5 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content5 a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown5:hover .dropdown-content5 {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown5:hover .dropbtn5 {
+    background-color: #D9D9D9;
+}
+
+</style>
+
 .Triangle {
     width: 1799px;
     height: 229px;
