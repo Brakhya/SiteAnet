@@ -184,7 +184,6 @@ flex-shrink: 0;
 
 /*Menu 4*/
 <style>
-/* Style The Dropdown Button */
 .dropbtn4 {
     background-color: #D9D9D9;
     color: white;
@@ -193,14 +192,10 @@ flex-shrink: 0;
     border: none;
     cursor: pointer;
 }
-
-/* The container <div> - needed to position the dropdown content */
 .dropdown4 {
     position: relative;
     display: inline-block;
 }
-
-/* Dropdown Content (Hidden by Default) */
 .dropdown-content4 {
     display: none;
     position: absolute;
@@ -210,28 +205,41 @@ flex-shrink: 0;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
-
-/* Links inside the dropdown */
 .dropdown-content4 a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
-
-/* Change color of dropdown links on hover */
 .dropdown-content4 a:hover {
     background-color: #f1f1f1;
 }
-
-/* Show the dropdown menu on hover */
 .dropdown4:hover .dropdown-content4 {
     display: block;
 }
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown4:hover .dropbtn4 {
     background-color: #D9D9D9;
 }
+.Triangle {
+    width: 1799px;
+    height: 229px;
+    flex-shrink: 0;
+    fill: #D9D9D9;
+    mix-blend-mode: hard-light;
+}
+.Suivez-nous!{
+display: flex;
+width: 123px;
+height: 17px;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+    color: #000;
+font-family: Mulish;
+font-size: 15px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;}
+
 
 </style>
