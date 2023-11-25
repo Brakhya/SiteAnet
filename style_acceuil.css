@@ -1,307 +1,63 @@
-/*background*/
-body {
-    background: url('SiteAnet/images/Acceuil/Background\ arbre.png'), lightgray -7.016px -31.955px / 100.78% 110.796% no-repeat;
-    background-position: center center; 
-    background-repeat: no-repeat; 
-    width: 900px;
-    height: 592px;
-    flex-shrink: 0;
-}
-logo {
-    border-radius: 123px;
-background: url('SiteAnet/images/Acceuil/Logo\ Anet.png'), lightgray 50% / cover no-repeat;
-mix-blend-mode: plus-darker;
-width: 123px;
-height: 90px;
-flex-shrink: 0;
-
-}
-/*Menu 1*/
-<style>
-/* Style The Dropdown Button */
-.dropbtn1 {
-    width: 128px;
-    height: 47px;
-    flex-shrink: 0;
-    background: #D9D9D9;
-    mix-blend-mode: hard-light;
-    
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown1 {
-    position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content1 {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 100px;
-    overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content1 a {
+.Exposition {
     color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
+    font-size: 20px;
+    font-family: Mulish;
+    font-weight: 700;
+    word-wrap: break-word
 }
 
-/* Change color of dropdown links on hover */
-.dropdown-content1 a:hover {
-    background-color: #f1f1f1;
-}
-
-/* Show the dropdown menu on hover */
-.dropdown1:hover .dropdown-content1 {
-    display: block;
-}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown1:hover .dropbtn1 {
-    background-color: #D9D9D9;
-}
-
-</style>
-
-/*Menu 2*/
-
-<style>
-/* Style The Dropdown Button */
-.dropbtn2 {
-    width: 128px;
-    height: 47px;
-    flex-shrink: 0;
-    background: #D9D9D9;
-    mix-blend-mode: hard-light;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown2 {
-    position: relative;
-    display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content2 {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 100px;
-    overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content2 a {
+.Visites {
     color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
+    font-size: 20px;
+    font-family: Mulish;
+    font-weight: 700;
+    word-wrap: break-word
 }
 
-/* Change color of dropdown links on hover */
-.dropdown-content2 a:hover {
-    background-color: #f1f1f1;
-}
-
-/* Show the dropdown menu on hover */
-.dropdown2:hover .dropdown-content2 {
-    display: block;
-}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown2:hover .dropbtn2 {
-    background-color: #D9D9D9;
-}
-
-</style>
-
-/*Menu 3*/
-<style>
-/* Style The Dropdown Button */
-.dropbtn3 {
-    background-color: #D9D9D9;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown3 {
-    position: relative;
-    display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content3 {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 100px;
-    overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content3 a {
+.Artiste {
     color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
+    font-size: 20px;
+    font-family: Mulish;
+    font-weight: 700;
+    word-wrap: break-word
 }
 
-/* Change color of dropdown links on hover */
-.dropdown-content3 a:hover {
-    background-color: #f1f1f1;
-}
-
-/* Show the dropdown menu on hover */
-.dropdown3:hover .dropdown-content3 {
-    display: block;
-}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown3:hover .dropbtn3 {
-    background-color: #D9D9D9;
-}
-
-
-</style>
-
-/*Menu 4*/
-<style>
-.dropbtn4 {
-    background-color: #D9D9D9;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-}
-.dropdown4 {
-    position: relative;
-    display: inline-block;
-}
-.dropdown-content4 {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 100px;
-    overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-.dropdown-content4 a {
+.Contact {
     color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-.dropdown-content4 a:hover {
-    background-color: #f1f1f1;
-}
-.dropdown4:hover .dropdown-content4 {
-    display: block;
-}
-.dropdown4:hover .dropbtn4 {
-    background-color: #D9D9D9;
-}
-/*Menu 5*/
-<style>
-/* Style The Dropdown Button */
-.dropbtn5 {
-    width: 128px;
-    height: 47px;
-    flex-shrink: 0;
-    background: #D9D9D9;
-    mix-blend-mode: hard-light;
-    
+    font-size: 20px;
+    font-family: Mulish;
+    font-weight: 700;
+    word-wrap: break-word
 }
 
-/* The container <div> - needed to position the dropdown content */
-.dropdown5 {
-    position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content5 {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 100px;
-    overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content5 a {
+.Suivez-nous {
     color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
+    font-size: 15px;
+    font-family: Mulish;
+    font-weight: 700;
+    word-wrap: break-word
 }
 
-/* Change color of dropdown links on hover */
-.dropdown-content5 a:hover {
-    background-color: #f1f1f1;
+.Anet {
+    color: black;
+    font-size: 10px;
+    font-family: Mulish;
+    font-weight: 700;
+    word-wrap: break-word
 }
 
-/* Show the dropdown menu on hover */
-.dropdown5:hover .dropdown-content5 {
-    display: block;
+.anetsbirrazzuoli {
+    color: black;
+    font-size: 10px;
+    font-family: Mulish;
+    font-weight: 700;
+    word-wrap: break-word
 }
 
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown5:hover .dropbtn5 {
-    background-color: #D9D9D9;
+.Notre {
+    color: black;
+    font-size: 13px;
+    font-family: Mulish;
+    font-weight: 700;
+    word-wrap: break-word
 }
-
-</style>
-
-.Triangle {
-    width: 1799px;
-    height: 229px;
-    flex-shrink: 0;
-    fill: #D9D9D9;
-    mix-blend-mode: hard-light;
-}
-.Suivez-nous!{
-display: flex;
-width: 123px;
-height: 17px;
-flex-direction: column;
-justify-content: center;
-flex-shrink: 0;
-    color: #000;
-font-family: Mulish;
-font-size: 15px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;}
-
-.Facebook {
-    fill: url('images/Page\1\-\Acceuil/Facebook+Icon+Black.png'), lightgray -46.455px -9.553px / 331.956% 151.282% no-repeat;
-width: 39px;
-height: 39px;
-flex-shrink: 0;}
-
-</style>
