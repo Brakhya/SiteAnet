@@ -1,33 +1,139 @@
 <!DOCTYPE html>
 
-<html lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="Français" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="style_acceuil.css">
-    <title>Site Anet</title>
+    <title></title>
+ <script type="text/javascript">
 
+        function clickOnExposition() {
+            window.open('Exposition.html', '_self');
+        }
+
+        function clickOnVisites() {
+            window.open('Visites.html', '_self');
+        }
+
+        function clickOnArtiste() {
+            window.open('Artiste.html', '_self');
+        }
+
+        function clickOnContact() {
+            window.open('Contact.html', '_self');
+        }
+
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>Bootstrap Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-    <div style="width: 100%; height: 100%; position: absolute; background: white; border-radius: 2px; overflow: hidden; border: 1px rgba(0, 0, 0, 0.10) solid">
-        <div style="width: 896px; height: 600px; left: -2px; top: 0px; position: absolute; background: white"></div>
-        <img src='images/Acceuil/Background\arbre.png'alt='background' style="width: 905px; height: 630px; left: -6px; top: 0px; position: absolute"/>
-        <div style="width: 1799px; height: 229px; left: -900px; top: 430px; position: absolute; mix-blend-mode: hard-light; background: #D9D9D9"></div>
-        <div style="width: 128px; height: 47px; left: 108px; top: 190px; position: absolute; mix-blend-mode: hard-light; background: #D9D9D9"></div>
-        <div class="Exposition" style="width: 128px; height: 47px; left: 108px; top: 200px; position: absolute; text-align: center; color: black; font-size: 20px; font-family: Mulish; font-weight: 700; word-wrap: break-word">Exposition</div>
-        <div style="width: 128px; height: 47px; left: 290px; top: 190px; position: absolute; mix-blend-mode: hard-light; background: #D9D9D9"></div>
-        <div class="Visites" style="width: 128px; height: 47px; left: 290px; top: 200px; position: absolute; text-align: center; color: black; font-size: 20px; font-family: Mulish; font-weight: 700; word-wrap: break-word">Visites</div>
-        <div style="width: 128px; height: 47px; left: 472px; top: 190px; position: absolute; mix-blend-mode: hard-light; background: #D9D9D9"></div>
-        <div class="Artiste" style="width: 128px; height: 47px; left: 472px; top: 200px; position: absolute; text-align: center; color: black; font-size: 20px; font-family: Mulish; font-weight: 700; word-wrap: break-word">Artiste</div>
-        <div style="width: 128px; height: 47px; left: 654px; top: 190px; position: absolute; mix-blend-mode: hard-light; background: #D9D9D9"></div>
-        <div class="Contact" style="width: 128px; height: 47px; left: 654px; top: 200px; position: absolute; text-align: center; color: black; font-size: 20px; font-family: Mulish; font-weight: 700; word-wrap: break-word">Contact</div>
-        <img src='images/Acceuil/Logo\Anet.png' style="width: 123px; height: 90px; left: 29px; top: 21px; position: absolute; border-radius: 9999px"/>
-        <div class="Suivez-nous" style="width: 123px; height: 17px; left: 29px; top: 454px; position: absolute; color: black; font-size: 15px; font-family: Mulish; font-weight: 700; word-wrap: break-word">Suivez-nous !</div>
-        <img src='images/Acceuil/Facebook+Icon+Black.png' style="width: 30px; height: 30px; left: 29px; top: 483px; position: absolute"/>
-        <img src='images/Acceuil/Insta\logo.webp'style="width: 45px; height: 45px; left: 20px; top: 520px; position: absolute"/>
-        <div class="Anet" style="left: 82px; top: 498px; position: absolute; color: black; font-size: 10px; font-family: Mulish; font-weight: 700; word-wrap: break-word">Anet</div>
-        <div class="anetsbirrazzuoli" style="left: 82px; top: 535px; position: absolute; color: black; font-size: 10px; font-family: Mulish; font-weight: 700; word-wrap: break-word">@anetsbirrazzuoli</div>
-        <img src='images/Acceuil/Ouvert.pdf'style="width: 20px; height: 20px; left: 32px; top: 585px; position: absolute"/>
-        <div class="Notre" style="width: 377px; height: 22px; left: 68px; top: 589px; position: absolute; color: black; font-size: 13px; font-family: Mulish; font-weight: 700; word-wrap: break-word">Notre atelier est ouvert aujourd’hui de 9h30 à 19h</div>
+    <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+        Link with href
+    </a>
+    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+        Button with data-bs-target
+    </button>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" style="width: 300px; background-color: #D9D9D9">
+        <div class="offcanvas-header">
+            <div class="offcanvas-title" id="offcanvasExampleLabel">
+                <img src="Images/MainImages/LogoAnet.png" />
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <!--Exposition-->
+            <div class="d-inline-flex gap-1 col-12">
+                <a class="btn" data-bs-toggle="collapse" href="#expositionOptions" role="button" aria-expanded="true" aria-controls="expositionOptions" style="width: 100%;">
+                    <label style="width: 100%; text-align: center;">Exposition</label>
+                </a>
+            </div>
+            <div class="collapse" id="expositionOptions" style="">
+                <div class="card card-body">
+                    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                </div>
+            </div>
+            <!--Visites-->
+            <div class="d-inline-flex gap-1 col-12">
+                <a class="btn" data-bs-toggle="collapse" href="#visitesOptions" role="button" aria-expanded="true" aria-controls="visitesOptions" style="width: 100%;">
+                    <label style="width: 100%; text-align: center;">Visites</label>
+                </a>
+            </div>
+            <div class="collapse" id="visitesOptions" style="">
+                <div class="card card-body">
+                    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                </div>
+            </div>
+            <!--Artiste-->
+            <div class="d-inline-flex gap-1 col-12">
+                <a class="btn" data-bs-toggle="collapse" href="#artisteOptions" role="button" aria-expanded="true" aria-controls="artisteOptions" style="width: 100%;">
+                    <label class="custom-label">Artiste</label>
+                </a>
+            </div>
+            <div class="collapse" id="artisteOptions" style="">
+                <div class="card card-body">
+                    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                </div>
+            </div>
+            <!--Contact-->
+            <div class="d-inline-flex gap-1 col-12">
+                <a class="btn" data-bs-toggle="collapse" href="#contactOptions" role="button" aria-expanded="true" aria-controls="contactOptions" style="width: 100%;">
+                    <label style="width: 100%; text-align: center;">Contact</label>
+                </a>
+            </div>
+            <div class="collapse" id="contactOptions" style="">
+                <div class="">
+                    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                </div>
+            </div>
+
+            <div id="instaFacebook" class="gap-1 col-12" style="position:absolute; bottom:5%;">
+                <div class="row m-0 p-0">
+                    <div class="col-3 justify-content-center">
+                        <img src="Images/MainImages/FacebookIconBlack.png" style="width: 62%; height: 88%; margin-left: 10px;" />
+                    </div>
+                    <div class="col-8 justify-content-center" style="margin-top: 3px; padding-left: 0px;">
+                        Anet
+                    </div>
+                </div>
+                <div class="row m-0 p-0">
+                    <div class="col-3 justify-content-center">
+                        <img src="Images/MainImages/InstaLogo.png" style="width: 100%; height: 100%;" />
+                    </div>
+                    <div class="col-8 justify-content-center" style=" margin-top: 12px; padding-left: 0px;">
+                        @anetsbirrazzuoli
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-</body>
-</html>
+    <div style="position: absolute; width: 30%; height: 30%; background-color: white; border: 1px solid #ccc; text-align: center; left: 50%; top: 19%;">
+        <div class="row m-0 mt-4 p-0">
+            <div class="col-12 justify-content-center">
+                Nouvelle exposition !
+            </div>
+            <p>Ne manquez pas notre nouvelle exposition,</P>
+                 
+               <p> Du 25 Avril au 2 Mai 2007</p>
+               <p>Lavoir Vasserot
+                Rue Quaranta, St-Tropez</p> 
+                
+                
+                <p>Pour réserver vos places:</p>
+        </div>
+    </div>
+    <div style="color: rgb(12, 12, 12); position: absolute; width: 15%; height: 4%; background-color: rgb(203, 171, 89); border: 1px solid #ccc; text-align: center; line-height: 30px; left: 58%; top: 47%; ">Reserver ma visite</div>
+    <div style="position: absolute; width: 30%; height: 16%; background-color: white; border: 1px solid #ccc; text-align: center; left: 50%; top: 57%;">
+       <div class="row m-0 p-0">
+           <div class="col-12 justify-content-center">
+               <img src="Images/Page 2 - Expo_Nouveautés/maps.png" style="width: 25%; height: 100%; left: 0%; margin-left: -125px;" />
+               <img src="Images/Page 2 - Expo_Nouveautés/road.jpg" style="width: 25%; height: 100%; margin-left: 50px;"/>
+           </div>
+            
+        </div>
+    </div>
