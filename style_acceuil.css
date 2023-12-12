@@ -1,63 +1,120 @@
-.Exposition {
-    color: black;
-    font-size: 20px;
-    font-family: Mulish;
-    font-weight: 700;
-    word-wrap: break-word
-}
+   <style>
+        .Exposition {
+            color: black;
+            font-size: 20px;
+            font-family: Mulish;
+            font-weight: 700;
+            word-wrap: break-word
+        }
 
-.Visites {
-    color: black;
-    font-size: 20px;
-    font-family: Mulish;
-    font-weight: 700;
-    word-wrap: break-word
-}
+        .Visites {
+            color: black;
+            font-size: 20px;
+            font-family: Mulish;
+            font-weight: 700;
+            word-wrap: break-word
+        }
 
-.Artiste {
-    color: black;
-    font-size: 20px;
-    font-family: Mulish;
-    font-weight: 700;
-    word-wrap: break-word
-}
+        .Artiste {
+            color: black;
+            font-size: 20px;
+            font-family: Mulish;
+            font-weight: 700;
+            word-wrap: break-word
+        }
 
-.Contact {
-    color: black;
-    font-size: 20px;
-    font-family: Mulish;
-    font-weight: 700;
-    word-wrap: break-word
-}
+        .Contact {
+            color: black;
+            font-size: 20px;
+            font-family: Mulish;
+            font-weight: 700;
+            word-wrap: break-word
+        }
 
-.Suivez-nous {
-    color: black;
-    font-size: 15px;
-    font-family: Mulish;
-    font-weight: 700;
-    word-wrap: break-word
-}
+        .Suivez-nous {
+            color: black;
+            font-size: 15px;
+            font-family: Mulish;
+            font-weight: 700;
+            word-wrap: break-word
+        }
 
-.Anet {
-    color: black;
-    font-size: 10px;
-    font-family: Mulish;
-    font-weight: 700;
-    word-wrap: break-word
-}
+        .Anet {
+            color: black;
+            font-size: 10px;
+            font-family: Mulish;
+            font-weight: 700;
+            word-wrap: break-word
+        }
 
-.anetsbirrazzuoli {
-    color: black;
-    font-size: 10px;
-    font-family: Mulish;
-    font-weight: 700;
-    word-wrap: break-word
-}
+        .anetsbirrazzuoli {
+            color: black;
+            font-size: 10px;
+            font-family: Mulish;
+            font-weight: 700;
+            word-wrap: break-word
+        }
 
-.Notre {
-    color: black;
-    font-size: 13px;
-    font-family: Mulish;
-    font-weight: 700;
-    word-wrap: break-word
-}
+        .Notre {
+            color: black;
+            font-size: 13px;
+            font-family: Mulish;
+            font-weight: 700;
+            word-wrap: break-word
+        }
+
+        .triangle {
+            width: 1799px;
+            height: 229px;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            left: -905px;
+            left: -905px;
+            top: 401px;
+            position: absolute;
+            mix-blend-mode: hard-light;
+            background: #D9D9D9;
+        }
+
+        .a {
+            width: 128px;
+            height: 47px;
+            left: 1011px;
+            top: 190px;
+            position: absolute;
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        .b {
+            width: 128px;
+            left: 1007px;
+            top: 325px;
+            position: absolute;
+            text-align: center;
+        }
+
+        .mainBox:hover {
+            background: white;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) inset;
+            border: 1px black solid
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('Images/MainImages/BackgroundArbre.png');
+            background-size: 100vw 100vh;
+            background-repeat: no-repeat;
+            background-attachment: fixed; /* This ensures the background doesn't scroll */
+        }
+
+        .custom-label {
+            width: 100%;
+            text-align: center;
+            color: black; /* Initial text color */
+        }
+
+            .custom-label.clicked {
+                color: white; /* Text color when clicked */
+            }
