@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -21,14 +21,14 @@
 </head>
 <body>
 
-    <div style="position: absolute;width: 75%;height: 65%;background-color: white;border: 1px solid #ccc;text-align: center;left: 11%;top: 15%;opacity: 0.89;background-color: darkolivegreen;">
+    <div style="position: absolute;width: 75%;height: 65%;background-color: white;border: 1px solid #ccc;text-align: center;left: 11%;top: 15%;opacity: 0.89;background-color: rgb(150, 166, 123);">
         <div style="position: absolute;width: 75%;height: 65%;background-color: white;border: 1px solid #ccc;text-align: center;left: 11%;top: 15%;opacity: 0.89;/* background-color: darkolivegreen; */">
             <div class="row m-0 mt-4 p-0" style="font-size: 10px;">
                 <div class="col-12 mt-4 justify-content-center">
-                    L’atelier est ouvert 3 semaines par mois.
+                    <b>L’atelier est ouvert 3 semaines par mois.</b>
                 </div>
                 <div class="col-12 mt-4 justify-content-center">
-                    Les heures d’ouvertures sont:
+                    <b>Les heures d’ouvertures sont:</b>
                 </div>
                 <div class="col-12 mt-4 justify-content-center">
                     Lundi de 9h30 à 19h
@@ -46,16 +46,21 @@
                     Vendredi de 9h30 à 19h
                 </div>
                 <div class="col-12 mt-4 justify-content-center">
-                    L’atelier est fermé les Samedis et les Dimanches.
+                    <b>L'atelier est fermé les Samedis et les Dimanches</b>
                 </div>
             </div>
         </div>
     </div>
     
-    <div style="position: absolute; width: 58%; height: 8%; background-color: dimgrey; text-align: center; left: 19%; top: 70%; line-height: 30px;">
+    <div style="position: absolute; width: 58%; height: 8%; background-color: dimgrey; text-align: center; left: 19%; top: 80%; line-height: 30px;">
         <div class="row" style="height: 30%;"></div>
-        <div class="row"  style="justify-content: center;">
-            Reserver ma visite
+        <div class="row"  style="justify-content: center;"
+        class="collapse" id="visitesOptions" style="">
+                <a class="btn" style="width: 100%;">
+                    <label style="width: 100%; text-align: center;" onclick="clickOnReserver();">Reserver ma visite</label>
+                </a>
+            
+            
         </div>
         <div class="row"></div>
        
