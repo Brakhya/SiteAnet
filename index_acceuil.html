@@ -1,25 +1,107 @@
 <!DOCTYPE html>
 
-<html lang="Français" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="fr" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
     <title></title>
- <script type="text/javascript">
-
-        function clickOnExposition() {
-            window.open('Exposition.html', '_self');
+     <style>
+    .a {
+            width: 128px;
+            height: 47px;
+            left: 1011px;
+            top: 190px;
+            position: absolute;
+            text-align: center;
+            text-decoration: underline;
         }
 
-        function clickOnVisites() {
-            window.open('Visites.html', '_self');
+        .b {
+            width: 128px;
+            left: 1007px;
+            top: 325px;
+            position: absolute;
+            text-align: center;
         }
 
-        function clickOnArtiste() {
-            window.open('Artiste.html', '_self');
+        .mainBox:hover {
+            background: white;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) inset;
+            border: 1px black solid
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('Images/MainImages/BackgroundArbre.png');
+            background-size: 100vw 100vh;
+            background-repeat: no-repeat;
+            background-attachment: fixed; /* This ensures the background doesn't scroll */
+        }
+
+        .custom-label {
+            width: 100%;
+            text-align: center;
+            color: black; /* Initial text color */
+        }
+
+            .custom-label.clicked {
+                color: white; /* Text color when clicked */
+            }
+    </style>
+    <script type="text/javascript">
+
+        function clickOnNouveaute() {
+            document.getElementById("pagesFrame").src = "Nouveaute.html";
+            document.getElementById("pagesFrame").style.backgroundImage.src = "Images/MainImages/BackgroundArbre.png";
+            document.getElementById("pagesFrame").style.display = "flex";
+            document.getElementById("menuBtnClose").click();
+        }
+
+        function clickOnOeuvres() {
+            document.getElementById("pagesFrame").src = "Oeuvres.html";
+            document.getElementById("pagesFrame").style.display = "flex";
+            document.getElementById("menuBtnClose").click();
+        }
+
+        function clickOnHoraires() {
+            document.getElementById("pagesFrame").src = "Horaires.html";
+            document.getElementById("pagesFrame").style.display = "flex";
+            document.getElementById("menuBtnClose").click();
+        }
+
+        function clickOnReserver() {
+            document.getElementById("pagesFrame").src = "ReserverMaVisite.html";
+            document.getElementById("pagesFrame").style.display = "flex";
+            document.getElementById("menuBtnClose").click();
+        }
+
+        function clickOnBiographie() {
+            document.getElementById("pagesFrame").src = "Biographie.html";
+            document.getElementById("pagesFrame").style.display = "flex";
+            document.getElementById("menuBtnClose").click();
+        }
+
+        function clickOnAtelier() {
+            document.getElementById("pagesFrame").src = "Atelier.html";
+            document.getElementById("pagesFrame").style.display = "flex";
+            document.getElementById("menuBtnClose").click();
+        }
+
+        function clickOnAvis() {
+            document.getElementById("pagesFrame").src = "Avis.html";
+            document.getElementById("pagesFrame").style.display = "flex";
+            document.getElementById("menuBtnClose").click();
         }
 
         function clickOnContact() {
-            window.open('Contact.html', '_self');
+            document.getElementById("pagesFrame").src = "Contact.html";
+            document.getElementById("pagesFrame").style.display = "flex";
+            document.getElementById("menuBtnClose").click();
+        }
+
+        function goToHomePage() {
+            document.getElementById("pagesFrame").style.display = "none";
+            document.getElementById("menuBtnClose").click();
         }
 
     </script>
@@ -32,19 +114,17 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-    <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-        Link with href
-    </a>
-    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-        Button with data-bs-target
+    <iframe id="pagesFrame" src="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; display: none;"></iframe>
+    <button id="menuBtnOpen" class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" style="position: absolute;">
+        hey
     </button>
 
     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" style="width: 300px; background-color: #D9D9D9">
         <div class="offcanvas-header">
             <div class="offcanvas-title" id="offcanvasExampleLabel">
-                <img src="Images/MainImages/LogoAnet.png" />
+                <img src="Images/MainImages/LogoAnet.png" onclick="goToHomePage();"/>
             </div>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <button id="menuBtnClose" type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
             <!--Exposition-->
@@ -54,9 +134,12 @@
                 </a>
             </div>
             <div class="collapse" id="expositionOptions" style="">
-                <div class="card card-body">
-                    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                </div>
+                <a class="btn" style="width: 100%;">
+                    <label style="width: 100%; text-align: center;" onclick="clickOnNouveaute();">Nouveaute</label>
+                </a>
+                <a class="btn" style="width: 100%;">
+                    <label style="width: 100%; text-align: center;" onclick="clickOnOeuvres();">Oeuvres</label>
+                </a>
             </div>
             <!--Visites-->
             <div class="d-inline-flex gap-1 col-12">
@@ -65,9 +148,12 @@
                 </a>
             </div>
             <div class="collapse" id="visitesOptions" style="">
-                <div class="card card-body">
-                    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                </div>
+                <a class="btn" style="width: 100%;">
+                    <label style="width: 100%; text-align: center;" onclick="clickOnHoraires();">Horaires</label>
+                </a>
+                <a class="btn" style="width: 100%;">
+                    <label style="width: 100%; text-align: center;" onclick="clickOnReserver();">Reserver ma visite</label>
+                </a>
             </div>
             <!--Artiste-->
             <div class="d-inline-flex gap-1 col-12">
@@ -76,8 +162,15 @@
                 </a>
             </div>
             <div class="collapse" id="artisteOptions" style="">
-                <div class="card card-body">
-                    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                <div>
+                    <a class="btn" style="width: 100%;">
+                        <label style="width: 100%; text-align: center;" onclick="clickOnBiographie();">Biographie</label>
+                    </a>
+                </div>
+                <div>
+                    <a class="btn" style="width: 100%;">
+                        <label style="width: 100%; text-align: center;" onclick="clickOnAtelier();">Atelier</label>
+                    </a>
                 </div>
             </div>
             <!--Contact-->
@@ -87,9 +180,12 @@
                 </a>
             </div>
             <div class="collapse" id="contactOptions" style="">
-                <div class="">
-                    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                </div>
+                <a class="btn" style="width: 100%;">
+                    <label style="width: 100%; text-align: center; border-top: 1px;" onclick="clickOnAvis();">Avis</label>
+                </a>
+                <a class="btn" style="width: 100%;">
+                    <label style="width: 100%; text-align: center;" onclick="clickOnContact();">Contact</label>
+                </a>
             </div>
 
             <div id="instaFacebook" class="gap-1 col-12" style="position:absolute; bottom:5%;">
@@ -112,28 +208,6 @@
             </div>
         </div>
     </div>
-    <div style="position: absolute; width: 30%; height: 30%; background-color: white; border: 1px solid #ccc; text-align: center; left: 50%; top: 19%;">
-        <div class="row m-0 mt-4 p-0">
-            <div class="col-12 justify-content-center">
-                Nouvelle exposition !
-            </div>
-            <p>Ne manquez pas notre nouvelle exposition,</P>
-                 
-               <p> Du 25 Avril au 2 Mai 2007</p>
-               <p>Lavoir Vasserot
-                Rue Quaranta, St-Tropez</p> 
-                
-                
-                <p>Pour réserver vos places:</p>
-        </div>
-    </div>
-    <div style="color: rgb(12, 12, 12); position: absolute; width: 15%; height: 4%; background-color: rgb(203, 171, 89); border: 1px solid #ccc; text-align: center; line-height: 30px; left: 58%; top: 47%; ">Reserver ma visite</div>
-    <div style="position: absolute; width: 30%; height: 16%; background-color: white; border: 1px solid #ccc; text-align: center; left: 50%; top: 57%;">
-       <div class="row m-0 p-0">
-           <div class="col-12 justify-content-center">
-               <img src="Images/Page 2 - Expo_Nouveautés/maps.png" style="width: 25%; height: 100%; left: 0%; margin-left: -125px;" />
-               <img src="Images/Page 2 - Expo_Nouveautés/road.jpg" style="width: 25%; height: 100%; margin-left: 50px;"/>
-           </div>
-            
-        </div>
-    </div>
+
+</body>
+</html>
